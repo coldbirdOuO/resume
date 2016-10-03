@@ -166,9 +166,22 @@ section:last-child {
 	color: #444;
 }
 
+.keySkillsLi li{
+
+	margin: 6px 0;
+}
+
 .keySkills ul li {
 	margin-bottom: 3px;
 }
+
+#KeySkillsFontSize {
+	font-size: 1.2em;
+}
+
+W
+
+
 
 @media all and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
