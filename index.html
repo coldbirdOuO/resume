@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<link type="text/css" rel="stylesheet" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
 	<body id="top">
 		<div id="cv" class="instaFade">
@@ -20,9 +21,9 @@
 
 				<div id="contactDetails" class="quickFade delayFour">
 					<ul>
-						<li>blog: <a href="http://coldbirdOuO.com" target="_blank">coldbirdOuO.com</a></li>
-						<li>github: <a href="https://github.com/coldbirdOuO">github.com/coldbirdOuO</a></li>
-						<li>mail: moopen200@gmail.com</li>
+						<li>Blog: <a href="http://coldbirdOuO.com" target="_blank">coldbirdOuO.com</a></li>
+						<li>GitHub: <a href="https://github.com/coldbirdOuO" target="_blank">github.com/coldbirdOuO</a></li>
+						<li>Mail: moopen200@gmail.com</li>
 					</ul>
 				</div>
 				<div class="clear"></div>
@@ -33,8 +34,8 @@
 					<div class="sectionTitle">
 						<h1>Personal Profile</h1>
 					</div>
-					<div class="sectionContent">
-						<p>從小就對軟體工程領域有著濃厚的興趣，讀碩士時意外發現codecademy這個網站，使我重新燃起寫程式的興趣，儘管非本科系畢業，但我寫程式的熱忱不輸給任何人！</p>
+					<div class="sectionContent" id='KeySkillsFontSize'>
+						<p>我是一個熱於接觸新知識，勇於接受挑戰的人，從小就對寫程式有著濃厚的興趣，接觸到codecademy這個教學網站後，更是對網頁這塊領域有著無法言喻的喜愛，儘管非本科系畢業，但我寫程式的熱忱不會輸給任何人！</p>
 					</div>
 				</article>
 				<div class="clear"></div>
@@ -43,7 +44,7 @@
 				<div class="sectionTitle">
 					<h1>Key Skills</h1>
 				</div>
-				<div class="sectionContent">
+				<div class="sectionContent" id = "KeySkillsFontSize">
 					<ul class="keySkills">
 						<li>Fundamental
 							<ul class="keySkillsLi">
@@ -54,8 +55,8 @@
 						</li>
 						<li>Frontend
 							<ul class="keySkillsLi">
-								<li>HTML, css, Javascript</li>
-								<li>Vue.js</li>
+								<li>HTML, CSS, JavaScript</li>
+								<li>jQuery, Vue.js</li>
 							</ul>
 						</li>
 						<li>Backend
@@ -67,7 +68,8 @@
 						</li>
 						<li>Other Skills
 							<ul class="keySkillsLi">
-								<li>Toeic: 800</li>
+								<li>AWS</li>
+								<li>TOEIC: 800+</li>
 							</ul>
 						</li>
 					</ul>
@@ -81,28 +83,40 @@
 						</div>
 						<div class="sectionContent">
 							<article>
-								<h2>購物車系統</h2>
-								<p class="subDetails">Node.js Express</p>
-								<p class="subDetails"><a href="https://github.com/coldbirdOuO/Shopping-Cart">https://github.com/coldbirdOuO/Shopping-Cart</a></p>
-								<p>利用Node.js與Express開發的作品，從中掌握了後端的邏輯撰寫，路由控制，身份認証與金流串接(stripe，歐付寶)，有後台可做庫存管理</p>
+									<h2>購物車系統</h2>
+									<p class="subDetails">Node.js Express</p>
+								<p class='skillsmargin'>利用Node.js與Express開發的作品，從中掌握了後端的邏輯撰寫，路由控制，身份認証與金流串接(stripe，歐付寶)，有後台可做庫存管理</p>
+								<p class="subLink"><a href="https://github.com/coldbirdOuO/Shopping-Cart" target="_blank">github.com/coldbirdouo/Shopping-Cart</a></p>
 							</article>
 							<article>
 								<h2>多房間聊天室</h2>
 								<p class="subDetails">Meteor.js</p>
-								<p class="subDetails"><a href="https://github.com/coldbirdOuO/Meteor-ChatRoom">https://github.com/coldbirdOuO/Meteor-ChatRoom</a></p>
-								<p>透過Meteor.js全端框架實現了即時性(RealTime)聊天室系統，使用者可以自由地新增房間，每個房間都是一個多人聊天室</p>
+								<p class='skillsmargin'>透過Meteor.js全端框架實現了即時性(RealTime)聊天室系統，使用者可以自由地新增房間，每個房間都是一個多人聊天室</p>
+								<p class="subLink"><a href="https://github.com/coldbirdOuO/Meteor-ChatRoom" target="_blank">github.com/coldbirdouo/Meteor-ChatRoom</a></p>
+							</article>
+							<article>
+								<h2>部落格架設</h2>
+								<p class="subDetails">AWS</p>
+								<p class='skillsmargin'>懂得利用AWS CloudFormation建立WordPress模版，內容包含AutoScaling，LoadBalancer，Security Group，並手動用S3對RDS做同步資料備份</p>
+								<p class="subLink"><a href="http://i.imgur.com/nFd8FR9.png" target="_blank">網站架構圖</a></p>
+							</article>
+							<article>
+								<h2>足部機構模擬</h2>
+								<p class="subDetails">EXCEL</p>
+								<p class='skillsmargin'>用EXCEL模擬連桿的運動，並由此結果做出仿生機器人，得到了成功大學104學年度機器設計與專題實作的金牌獎與最佳創意獎</p>
+								<p class="subLink"><a href="https://github.com/coldbirdOuO/LegMechanism" target="_blank">github.com/coldbirdOuO/LegMechanism</a></p>
 							</article>
 							<article>
 								<h2>五樓去哪兒~</h2>
 								<p class="subDetails">Chrome Extensions</p>
-								<a href="https://chrome.google.com/webstore/detail/%E4%BA%94%E6%A8%93%E5%8E%BB%E5%93%AA%E5%85%92/neicpkhccojnklaidlhddoonekaacaic">Chrome商店</a>
-								<p>對ptt的推文做編號</p>
+								<p class='skillsmargin'>對ptt的推文做編號</p>
+								<p class="subLink"><a href="https://chrome.google.com/webstore/detail/%E4%BA%94%E6%A8%93%E5%8E%BB%E5%93%AA%E5%85%92/neicpkhccojnklaidlhddoonekaacaic" target="_blank">Chrome商店頁面</a></p>
 							</article>
 							<article>
 								<h2>切版練習</h2>
 								<p class="subDetails">CSS skills</p>
-								<p class="subDetails"><a href='http://coldbirdouo.github.io/template/t5/'>http://coldbirdouo.github.io/template/t5/</a></p>
-								<p>熟悉使用HTML+CSS+Bootstrap製作網頁版面,改變網址t2~t7能看到不同的版面,總共六個版,t5~t7有做響應式設計</p>
+								<p class='skillsmargin'>熟悉使用HTML+CSS+Bootstrap製作網頁版面,改變網址t2~t7能看到不同的版面,總共六個版,t5~t7有做響應式設計</p>
+								<p class="subLink"><a href='http://coldbirdouo.github.io/template/t5/' target="_blank">coldbirdouo.github.io/template/t5/</a></p>
 							</article>
 						</div>
 						<div class="clear"></div>
